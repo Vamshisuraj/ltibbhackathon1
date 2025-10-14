@@ -3,6 +3,8 @@ kind: StatefulSet
 metadata:
   name: mysql
   namespace: dev
+  labels:
+    app: app-database
 spec:
   serviceName: "mysql"
   replicas: 1
