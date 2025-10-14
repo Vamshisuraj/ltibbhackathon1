@@ -3,8 +3,6 @@ kind: StatefulSet
 metadata:
   name: mysql
   namespace: dev
-  labels:
-    app: app-database
 spec:
   serviceName: "mysql"
   replicas: 1
@@ -21,7 +19,6 @@ spec:
         image: vamshisuraj/db:bank
         ports:
         - containerPort: 80
-          name: web
         volumeMounts:
         - name: www
           mountPath: /usr/share/nginx/html
