@@ -25,8 +25,8 @@ spec:
       imagePullSecrets:
             - name: dockerhub-secret
   volumeClaimTemplates:
-  - metadata:
-    name: www
+   - metadata:
+      name: www
    spec:
       accessModes:
         - ReadWriteOnce
