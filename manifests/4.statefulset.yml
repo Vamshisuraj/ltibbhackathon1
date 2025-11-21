@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: vamshisuraj/db:bank
+        image: vamshisuraj/database:dbimage
         ports:
         - containerPort: 80
         volumeMounts:
